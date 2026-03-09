@@ -3,559 +3,292 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tortes Namiņš — Rīgas Konditoreja</title>
+  <meta name="description" content="Tortes Namiņš — rotaļīga un eleganta konditorejas mājaslapa ar interaktīvu tortes veidotāju.">
+  <title>Tortes Namiņš — Elegantas Tortes un Konditoreja Rīgā</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
 </head>
 <body>
-
-  <!-- NAVIGATION -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">
-        <span class="logo-icon">🧁</span>
-        <span class="logo-text">Tortes<br><small>namiņš</small></span>
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Sākums</a></li>
-        <li><a href="#about">Par mums</a></li>
-        <li><a href="#gallery">Galerija</a></li>
-        <li><a href="#builder">Tortes Veidotājs</a></li>
-        <li><a href="#menu">Izvēlne</a></li>
-        <li><a href="#contact">Kontakti</a></li>
-      </ul>
-      <a href="#builder" class="nav-cta">Izveido Torti 🎂</a>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <p class="hero-tag">✨ Rīgas gardākā konditoreja</p>
-      <h1>Katra torte ir<br><em>mākslas darbs</em></h1>
-      <p class="hero-sub">Mūsu rokām radītas tortes un konditorejas izstrādājumi priecēs gan acis, gan garšas kārpiņas.</p>
-      <div class="hero-actions">
-        <a href="#builder" class="btn btn-primary">Izveido Savu Torti →</a>
-        <a href="#gallery" class="btn btn-ghost">Apskatīt Galeriju</a>
+  <div class="site-shell">
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo" aria-label="Tortes Namiņš sākumlapa">
+          <span class="logo-icon">🧁</span>
+          <span class="logo-text">Tortes<br><small>namiņš</small></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">Par mums</a></li>
+          <li><a href="#signature">Kolekcija</a></li>
+          <li><a href="#builder">Tortes veidotājs</a></li>
+          <li><a href="#moments">Pasūtījuma process</a></li>
+          <li><a href="#contact">Kontakti</a></li>
+        </ul>
+        <a href="#builder" class="nav-cta">Pasūtīt torti</a>
+        <button class="hamburger" id="hamburger" aria-label="Atvērt izvēlni">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">2000+</span><span class="stat-label">Tortes radītas</span></div>
-        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Gadi pieredze</span></div>
-        <div class="stat"><span class="stat-num">⭐ 4.9</span><span class="stat-label">Klientu vērtējums</span></div>
-      </div>
-    </div>
-    <div class="hero-float">
-      <div class="float-card float-1">🎂</div>
-      <div class="float-card float-2">🧁</div>
-      <div class="float-card float-3">🍰</div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-images">
-          <div class="about-img-main">🎂</div>
-          <div class="about-img-small">☕</div>
-        </div>
-        <div class="about-text">
-          <span class="section-tag">Mūsu stāsts</span>
-          <h2>No sirds gatavots,<br>ar mīlestību pasniegts</h2>
-          <p>Kopš 2018. gada mēs radām unikālas tortes un konditorejas izstrādājumus Rīgā. Katrs mūsu produkts top ar rūpību, izmantojot tikai augstākās kvalitātes ingredientus.</p>
-          <p>Mūsu komanda apvieno tradicionālās receptes ar modernām tehnikām, lai radītu nebijušas garšu kompozīcijas.</p>
-          <div class="about-features">
-            <div class="feature"><span>🌿</span> Dabīgi ingredienti</div>
-            <div class="feature"><span>🎨</span> Individuāls dizains</div>
-            <div class="feature"><span>❤️</span> Gatavots ar mīlestību</div>
-            <div class="feature"><span>🚗</span> Piegāde Rīgā</div>
+    <header class="hero" id="home">
+      <div class="hero-orb orb-a"></div>
+      <div class="hero-orb orb-b"></div>
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Rīgas konditoreja ar raksturu</p>
+          <h1>Tortes, kas izskatās <span>izsmalcināti</span> un garšo vēl labāk.</h1>
+          <p class="hero-text">Playful premium sajūta, maigās krāsas un individuāli pasūtījumi — ideāli dzimšanas dienām, kāzām, ofisa svētkiem un mazajiem "es tevi mīlu" pārsteigumiem.</p>
+          <div class="hero-actions">
+            <a href="#builder" class="btn btn-primary">Atvērt tortes veidotāju</a>
+            <a href="#signature" class="btn btn-secondary">Apskatīt kolekciju</a>
           </div>
+          <div class="hero-points">
+            <div><strong>Individuāls dizains</strong><span>No bento līdz svētku tortei.</span></div>
+            <div><strong>Ātra komunikācija</strong><span>Ērti precizēt detaļas.</span></div>
+            <div><strong>Premium sajūta</strong><span>Mūsdienīgs un fotogēnisks noformējums.</span></div>
+          </div>
+        </div>
+        <div class="hero-stage reveal delay-1">
+          <div class="stage-card main-cake">
+            <div class="cake-badge">Signature</div>
+            <div class="cake-illustration">
+              <span class="cake-top">🍓</span>
+              <span class="cake-body">🎂</span>
+            </div>
+            <div class="stage-caption">
+              <h3>Pistāciju & aveņu sapnis</h3>
+              <p>Maigs premium tonis, gluds siluets un izteiksmīga dekoru valoda.</p>
+            </div>
+          </div>
+          <div class="floating-note note-one">Bento kolekcija ✨</div>
+          <div class="floating-note note-two">Custom teksts + foto topiņš</div>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- GALLERY -->
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <span class="section-tag">Galerija</span>
-      <h2>Mūsu darbi</h2>
-      <div class="gallery-filters">
-        <button class="filter-btn active" data-filter="all">Visi</button>
-        <button class="filter-btn" data-filter="bento">Bento tortes</button>
-        <button class="filter-btn" data-filter="mousse">Mousse tortes</button>
-        <button class="filter-btn" data-filter="celebration">Svētku tortes</button>
-        <button class="filter-btn" data-filter="pastry">Konditorejas</button>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item" data-category="bento">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFB5C2, #FF8FAB)">🎂<br><small>Bento Rozā</small></div>
-        </div>
-        <div class="gallery-item" data-category="mousse">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #B8E6B8, #7BC67B)">🍰<br><small>Pistāciju Mousse</small></div>
-        </div>
-        <div class="gallery-item large" data-category="celebration">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFD700, #FFA500)">🎂<br><small>Zelta Jubileja</small></div>
-        </div>
-        <div class="gallery-item" data-category="pastry">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #DEB887, #D2691E)">🧁<br><small>Karameles Kūkas</small></div>
-        </div>
-        <div class="gallery-item" data-category="bento">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #E6CCF5, #C89BEE)">🎂<br><small>Bento Lavanda</small></div>
-        </div>
-        <div class="gallery-item" data-category="mousse">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFE4B5, #FFDAB9)">🍰<br><small>Mango Mousse</small></div>
-        </div>
-        <div class="gallery-item" data-category="celebration">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #FFB6C1, #FF69B4)">🎂<br><small>Rozā Sapnis</small></div>
-        </div>
-        <div class="gallery-item" data-category="pastry">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #87CEEB, #4682B4)">☕<br><small>Eklēri</small></div>
-        </div>
-      </div>
-      <p class="gallery-note">📸 Aizstāj placeholder attēlus ar īstām fotogrāfijām no jūsu kolekcijas!</p>
-    </div>
-  </section>
+    <section class="metrics container reveal">
+      <article class="metric-card">
+        <span>🎂</span>
+        <strong>Custom tortes</strong>
+        <p>Individuāli pielāgojams izmērs, garša un dizains.</p>
+      </article>
+      <article class="metric-card">
+        <span>☕</span>
+        <strong>Kafejnīcas sajūta</strong>
+        <p>Silts, estētisks un instagrammīgs vizuālais tēls.</p>
+      </article>
+      <article class="metric-card">
+        <span>📱</span>
+        <strong>Vienkāršāks pasūtījums</strong>
+        <p>Klientam skaidrs ceļš no idejas līdz gatavam pasūtījumam.</p>
+      </article>
+    </section>
 
-  <!-- CAKE BUILDER -->
-  <section class="builder" id="builder">
-    <div class="container">
-      <span class="section-tag">✨ Interaktīvs</span>
-      <h2>Izveido Savu Sapņu Torti</h2>
-      <p class="builder-intro">Izvēlies izmēru, garšu, pildījumu un dekorācijas — mēs to radīsim!</p>
-      
-      <div class="builder-app">
-        <div class="builder-steps">
-          <div class="step-indicators">
-            <button class="step-dot active" data-step="1">1</button>
-            <button class="step-dot" data-step="2">2</button>
-            <button class="step-dot" data-step="3">3</button>
-            <button class="step-dot" data-step="4">4</button>
-            <button class="step-dot" data-step="5">5</button>
-          </div>
-
-          <!-- Step 1: Size -->
-          <div class="builder-step active" data-step="1">
-            <h3>📐 Izvēlies izmēru</h3>
-            <div class="option-grid">
-              <label class="option-card">
-                <input type="radio" name="size" value="bento" data-price="15">
-                <div class="option-inner">
-                  <span class="option-emoji">🍱</span>
-                  <strong>Bento</strong>
-                  <small>1-2 personas</small>
-                  <span class="option-price">no €15</span>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="size" value="small" data-price="30">
-                <div class="option-inner">
-                  <span class="option-emoji">🎂</span>
-                  <strong>Mazā</strong>
-                  <small>4-6 personas</small>
-                  <span class="option-price">no €30</span>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="size" value="medium" data-price="45">
-                <div class="option-inner">
-                  <span class="option-emoji">🎂</span>
-                  <strong>Vidējā</strong>
-                  <small>8-12 personas</small>
-                  <span class="option-price">no €45</span>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="size" value="large" data-price="65">
-                <div class="option-inner">
-                  <span class="option-emoji">🎂</span>
-                  <strong>Lielā</strong>
-                  <small>14-20 personas</small>
-                  <span class="option-price">no €65</span>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <!-- Step 2: Flavor -->
-          <div class="builder-step" data-step="2">
-            <h3>🍰 Izvēlies biskvītu</h3>
-            <div class="option-grid">
-              <label class="option-card">
-                <input type="radio" name="flavor" value="vanilla" data-price="0">
-                <div class="option-inner">
-                  <span class="option-emoji">🍦</span>
-                  <strong>Vaniļas</strong>
-                  <small>Klasiskais</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="flavor" value="chocolate" data-price="3">
-                <div class="option-inner">
-                  <span class="option-emoji">🍫</span>
-                  <strong>Šokolādes</strong>
-                  <small>Tumšā šokolāde</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="flavor" value="pistachio" data-price="5">
-                <div class="option-inner">
-                  <span class="option-emoji">🌿</span>
-                  <strong>Pistāciju</strong>
-                  <small>Premium</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="flavor" value="redvelvet" data-price="3">
-                <div class="option-inner">
-                  <span class="option-emoji">❤️</span>
-                  <strong>Red Velvet</strong>
-                  <small>Elegants</small>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <!-- Step 3: Filling -->
-          <div class="builder-step" data-step="3">
-            <h3>🫐 Izvēlies pildījumu</h3>
-            <div class="option-grid">
-              <label class="option-card">
-                <input type="radio" name="filling" value="raspberry" data-price="0">
-                <div class="option-inner">
-                  <span class="option-emoji">🍓</span>
-                  <strong>Aveņu</strong>
-                  <small>Saldskābs</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="filling" value="mango" data-price="3">
-                <div class="option-inner">
-                  <span class="option-emoji">🥭</span>
-                  <strong>Mango-Passion</strong>
-                  <small>Eksotisks</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="filling" value="caramel" data-price="2">
-                <div class="option-inner">
-                  <span class="option-emoji">🍯</span>
-                  <strong>Karameles</strong>
-                  <small>Saldais</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="filling" value="berries" data-price="4">
-                <div class="option-inner">
-                  <span class="option-emoji">🫐</span>
-                  <strong>Meža ogu</strong>
-                  <small>Sezonāls</small>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <!-- Step 4: Coating -->
-          <div class="builder-step" data-step="4">
-            <h3>🎨 Izvēlies pārklājumu</h3>
-            <div class="option-grid">
-              <label class="option-card">
-                <input type="radio" name="coating" value="mousse" data-price="5">
-                <div class="option-inner">
-                  <span class="option-emoji">✨</span>
-                  <strong>Mousse glazūra</strong>
-                  <small>Spoguļgluda</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="coating" value="buttercream" data-price="0">
-                <div class="option-inner">
-                  <span class="option-emoji">🧈</span>
-                  <strong>Sviesta krēms</strong>
-                  <small>Klasiskais</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="coating" value="naked" data-price="0">
-                <div class="option-inner">
-                  <span class="option-emoji">🌾</span>
-                  <strong>Naked</strong>
-                  <small>Dabīgais</small>
-                </div>
-              </label>
-              <label class="option-card">
-                <input type="radio" name="coating" value="fondant" data-price="8">
-                <div class="option-inner">
-                  <span class="option-emoji">🎭</span>
-                  <strong>Fondāns</strong>
-                  <small>Skulpturāls</small>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <!-- Step 5: Decorations -->
-          <div class="builder-step" data-step="5">
-            <h3>🌸 Izvēlies dekorācijas</h3>
-            <div class="option-grid">
-              <label class="option-card checkbox">
-                <input type="checkbox" name="decor" value="flowers" data-price="5">
-                <div class="option-inner">
-                  <span class="option-emoji">🌸</span>
-                  <strong>Dzīvie ziedi</strong>
-                  <span class="option-price">+€5</span>
-                </div>
-              </label>
-              <label class="option-card checkbox">
-                <input type="checkbox" name="decor" value="macarons" data-price="6">
-                <div class="option-inner">
-                  <span class="option-emoji">🟣</span>
-                  <strong>Makarūni</strong>
-                  <span class="option-price">+€6</span>
-                </div>
-              </label>
-              <label class="option-card checkbox">
-                <input type="checkbox" name="decor" value="gold" data-price="4">
-                <div class="option-inner">
-                  <span class="option-emoji">✨</span>
-                  <strong>Zelta lapa</strong>
-                  <span class="option-price">+€4</span>
-                </div>
-              </label>
-              <label class="option-card checkbox">
-                <input type="checkbox" name="decor" value="photo" data-price="3">
-                <div class="option-inner">
-                  <span class="option-emoji">📸</span>
-                  <strong>Foto topiņš</strong>
-                  <span class="option-price">+€3</span>
-                </div>
-              </label>
-              <label class="option-card checkbox">
-                <input type="checkbox" name="decor" value="text" data-price="3">
-                <div class="option-inner">
-                  <span class="option-emoji">✍️</span>
-                  <strong>Uzraksts</strong>
-                  <span class="option-price">+€3</span>
-                </div>
-              </label>
-              <label class="option-card checkbox">
-                <input type="checkbox" name="decor" value="sprinkles" data-price="2">
-                <div class="option-inner">
-                  <span class="option-emoji">🎉</span>
-                  <strong>Konfetti</strong>
-                  <span class="option-price">+€2</span>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <div class="builder-nav">
-            <button class="btn btn-ghost" id="prevStep" disabled>← Atpakaļ</button>
-            <button class="btn btn-primary" id="nextStep">Tālāk →</button>
+    <section class="about section-pad" id="about">
+      <div class="container split-layout">
+        <div class="about-copy reveal">
+          <p class="eyebrow">Par zīmolu</p>
+          <h2>Vairāk boutique patisserie, mazāk parasta konditoreja.</h2>
+          <p>Šī versija paceļ Tortes Namiņš nākamajā līmenī — elegantāka tipogrāfija, vairāk gaisa starp blokiem, smalkākas krāsas un premium saskares sajūta visā lapā.</p>
+          <p>Fokuss ir uz to, lai klients uzreiz saprot: šeit var pasūtīt ko skaistu, personalizētu un īpašu, ne tikai "vēl vienu torti".</p>
+          <div class="about-checks">
+            <div>Playful, bet ne bērnišķīgi.</div>
+            <div>Profesionāli, bet silti un aicinoši.</div>
+            <div>Konversijai gatavs dizains ar skaidriem CTA.</div>
           </div>
         </div>
-
-        <!-- Preview Panel -->
-        <div class="builder-preview">
-          <div class="preview-card">
-            <h3>🎂 Jūsu torte</h3>
-            <div class="cake-visual" id="cakeVisual">
-              <div class="cake-layer cake-base" id="cakeBase">🎂</div>
+        <div class="about-panel reveal delay-1">
+          <div class="panel-card card-large">
+            <span class="mini-label">Design direction</span>
+            <h3>Soft luxury</h3>
+            <p>Puderpink, šampanieša tonis, tumšs teksts un mazliet zelta akcentu.</p>
+          </div>
+          <div class="panel-row">
+            <div class="panel-card">
+              <span class="emoji">🌸</span>
+              <p>Maigi akcenti</p>
             </div>
-            <div class="preview-summary">
-              <div class="preview-item" id="prevSize"><span>Izmērs:</span> <em>Nav izvēlēts</em></div>
-              <div class="preview-item" id="prevFlavor"><span>Biskvīts:</span> <em>Nav izvēlēts</em></div>
-              <div class="preview-item" id="prevFilling"><span>Pildījums:</span> <em>Nav izvēlēts</em></div>
-              <div class="preview-item" id="prevCoating"><span>Pārklājums:</span> <em>Nav izvēlēts</em></div>
-              <div class="preview-item" id="prevDecor"><span>Dekorācijas:</span> <em>Nav izvēlēts</em></div>
+            <div class="panel-card">
+              <span class="emoji">✨</span>
+              <p>Premium detaļas</p>
             </div>
-            <div class="preview-total">
-              <span>Orientējošā cena:</span>
-              <strong id="totalPrice">€0</strong>
-            </div>
-            <button class="btn btn-primary btn-full" id="orderBtn" style="display:none">
-              📱 Pasūtīt WhatsApp
-            </button>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- MENU -->
-  <section class="menu" id="menu">
-    <div class="container">
-      <span class="section-tag">Izvēlne</span>
-      <h2>Mūsu gardumi</h2>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <div class="menu-emoji">🍱</div>
-          <h3>Bento tortes</h3>
-          <p>Mazās individuālās tortītes ar mousse pildījumu. Ideālas dāvanai!</p>
-          <span class="menu-price">no €15</span>
+    <section class="signature section-pad alt-bg" id="signature">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Kolekcija</p>
+          <h2>Trīs noskaņas, ar kurām pārdot skaistāk.</h2>
         </div>
-        <div class="menu-card">
-          <div class="menu-emoji">🍰</div>
-          <h3>Mousse tortes</h3>
-          <p>Gaisīgas, ar spoguļglazūru un sezonāliem augļiem.</p>
-          <span class="menu-price">no €30</span>
-        </div>
-        <div class="menu-card">
-          <div class="menu-emoji">🎂</div>
-          <h3>Svētku tortes</h3>
-          <p>Individuāli veidotas tortes dzimšanas dienām, kāzām un jubilejām.</p>
-          <span class="menu-price">no €40</span>
-        </div>
-        <div class="menu-card">
-          <div class="menu-emoji">🧁</div>
-          <h3>Kēksiņi</h3>
-          <p>Mini kūciņas ar dažādiem krēmiem un dekorācijām.</p>
-          <span class="menu-price">no €3/gab</span>
-        </div>
-        <div class="menu-card">
-          <div class="menu-emoji">🥐</div>
-          <h3>Kruasāni</h3>
-          <p>Svaigi cepti, ar šokolādi vai mandeļu krēmu.</p>
-          <span class="menu-price">no €2.50</span>
-        </div>
-        <div class="menu-card">
-          <div class="menu-emoji">☕</div>
-          <h3>Kafija</h3>
-          <p>Specialty kafija — espresso, latte, cappuccino un sezonālie dzērieni.</p>
-          <span class="menu-price">no €2.50</span>
+        <div class="signature-grid">
+          <article class="signature-card reveal">
+            <div class="signature-visual blush">🍱</div>
+            <h3>Bento Mini</h3>
+            <p>Perfekti dāvanām, mazām svinībām un impulsīvam "gribu šodien" pasūtījumam.</p>
+          </article>
+          <article class="signature-card reveal delay-1">
+            <div class="signature-visual pistachio">🍰</div>
+            <h3>Mousse & modern classics</h3>
+            <p>Gludas formas, svaigi toņi un sezonāli pildījumi ar boutique sajūtu.</p>
+          </article>
+          <article class="signature-card reveal delay-2">
+            <div class="signature-visual gold">🎂</div>
+            <h3>Celebration couture</h3>
+            <p>Lielākas svētku tortes ar personalizētām detaļām, tekstiem un premium dekoru.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <div class="container">
-      <span class="section-tag">Atsauksmes</span>
-      <h2>Ko saka mūsu klienti</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>"Vislabākā torte, ko esmu garšojusi! Pistāciju mousse bija vienkārši neticama."</p>
-          <strong>— Anna K.</strong>
+    <section class="builder section-pad" id="builder">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Interactive feature</p>
+          <h2>Tortes veidotājs ar modernāku sajūtu.</h2>
+          <p class="section-text">Šis bloks uzreiz rada wow efektu un palīdz klientam salikt pasūtījumu bez garas sarakstes.</p>
         </div>
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>"Pasūtīju bento torti dzimšanas dienā — skaista un neticami garda!"</p>
-          <strong>— Mārtiņš L.</strong>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">⭐⭐⭐⭐⭐</div>
-          <p>"Kāzu torte bija sapņu piepildījums. Paldies par brīnišķīgo darbu!"</p>
-          <strong>— Ieva & Jānis</strong>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <span class="section-tag">Kontakti</span>
-          <h2>Sazinies ar mums</h2>
-          <div class="contact-items">
-            <div class="contact-item">
-              <span>📍</span>
-              <div>
-                <strong>Adrese</strong>
-                <p>Ruses iela 5, Rīga, LV-1029</p>
+        <div class="builder-shell reveal delay-1">
+          <div class="builder-sidebar">
+            <div class="step-indicators">
+              <button class="step-dot active" data-step="1">1</button>
+              <button class="step-dot" data-step="2">2</button>
+              <button class="step-dot" data-step="3">3</button>
+              <button class="step-dot" data-step="4">4</button>
+              <button class="step-dot" data-step="5">5</button>
+            </div>
+            <div class="builder-step active" data-step="1">
+              <h3>Izmērs</h3>
+              <div class="option-grid compact">
+                <label class="option-card"><input type="radio" name="size" value="bento" data-price="18"><div class="option-inner"><strong>Bento</strong><small>1–2 pers.</small><span>€18</span></div></label>
+                <label class="option-card"><input type="radio" name="size" value="small" data-price="34"><div class="option-inner"><strong>Mazā</strong><small>4–6 pers.</small><span>€34</span></div></label>
+                <label class="option-card"><input type="radio" name="size" value="medium" data-price="49"><div class="option-inner"><strong>Vidējā</strong><small>8–12 pers.</small><span>€49</span></div></label>
+                <label class="option-card"><input type="radio" name="size" value="large" data-price="72"><div class="option-inner"><strong>Lielā</strong><small>14–20 pers.</small><span>€72</span></div></label>
               </div>
             </div>
-            <div class="contact-item">
-              <span>📱</span>
-              <div>
-                <strong>WhatsApp / Telefons</strong>
-                <p>+371 2X XXX XXX</p>
+            <div class="builder-step" data-step="2">
+              <h3>Biskvīts</h3>
+              <div class="option-grid compact">
+                <label class="option-card"><input type="radio" name="flavor" value="vanilla" data-price="0"><div class="option-inner"><strong>Vaniļas</strong><small>Klasisks un maigs</small></div></label>
+                <label class="option-card"><input type="radio" name="flavor" value="chocolate" data-price="4"><div class="option-inner"><strong>Šokolādes</strong><small>Dziļāka garša</small></div></label>
+                <label class="option-card"><input type="radio" name="flavor" value="pistachio" data-price="6"><div class="option-inner"><strong>Pistāciju</strong><small>Premium izvēle</small></div></label>
+                <label class="option-card"><input type="radio" name="flavor" value="redvelvet" data-price="4"><div class="option-inner"><strong>Red Velvet</strong><small>Efektīgs tonis</small></div></label>
               </div>
             </div>
-            <div class="contact-item">
-              <span>📧</span>
-              <div>
-                <strong>E-pasts</strong>
-                <p>info@tortesnamins.lv</p>
+            <div class="builder-step" data-step="3">
+              <h3>Pildījums</h3>
+              <div class="option-grid compact">
+                <label class="option-card"><input type="radio" name="filling" value="raspberry" data-price="0"><div class="option-inner"><strong>Aveņu</strong><small>Svaigs akcents</small></div></label>
+                <label class="option-card"><input type="radio" name="filling" value="mango" data-price="3"><div class="option-inner"><strong>Mango-passion</strong><small>Tropiski viegls</small></div></label>
+                <label class="option-card"><input type="radio" name="filling" value="caramel" data-price="2"><div class="option-inner"><strong>Karameles</strong><small>Bagātīgs saldums</small></div></label>
+                <label class="option-card"><input type="radio" name="filling" value="berries" data-price="4"><div class="option-inner"><strong>Meža ogas</strong><small>Dabīgs raksturs</small></div></label>
               </div>
             </div>
-            <div class="contact-item">
-              <span>🕐</span>
-              <div>
-                <strong>Darba laiks</strong>
-                <p>P-Pk: 9:00 - 19:00<br>S: 10:00 - 17:00<br>Sv: Slēgts</p>
+            <div class="builder-step" data-step="4">
+              <h3>Pārklājums</h3>
+              <div class="option-grid compact">
+                <label class="option-card"><input type="radio" name="coating" value="mousse" data-price="5"><div class="option-inner"><strong>Mousse glazūra</strong><small>Gluda elegance</small></div></label>
+                <label class="option-card"><input type="radio" name="coating" value="buttercream" data-price="0"><div class="option-inner"><strong>Sviesta krēms</strong><small>Klasisks premium</small></div></label>
+                <label class="option-card"><input type="radio" name="coating" value="naked" data-price="0"><div class="option-inner"><strong>Naked</strong><small>Dabīgāks tēls</small></div></label>
+                <label class="option-card"><input type="radio" name="coating" value="fondant" data-price="8"><div class="option-inner"><strong>Fondāns</strong><small>Skulpturāls efekts</small></div></label>
               </div>
+            </div>
+            <div class="builder-step" data-step="5">
+              <h3>Dekori</h3>
+              <div class="option-grid compact">
+                <label class="option-card checkbox"><input type="checkbox" name="decor" value="flowers" data-price="5"><div class="option-inner"><strong>Dzīvie ziedi</strong><small>+ €5</small></div></label>
+                <label class="option-card checkbox"><input type="checkbox" name="decor" value="macarons" data-price="6"><div class="option-inner"><strong>Makarūni</strong><small>+ €6</small></div></label>
+                <label class="option-card checkbox"><input type="checkbox" name="decor" value="gold" data-price="4"><div class="option-inner"><strong>Zelta lapa</strong><small>+ €4</small></div></label>
+                <label class="option-card checkbox"><input type="checkbox" name="decor" value="text" data-price="3"><div class="option-inner"><strong>Personalizēts teksts</strong><small>+ €3</small></div></label>
+              </div>
+            </div>
+            <div class="builder-nav">
+              <button class="btn btn-secondary" id="prevStep" disabled>Atpakaļ</button>
+              <button class="btn btn-primary" id="nextStep">Tālāk</button>
             </div>
           </div>
-          <div class="social-links">
-            <a href="https://www.facebook.com/tortesnamins2018/" target="_blank" class="social-btn">📘 Facebook</a>
-            <a href="#" class="social-btn">📷 Instagram</a>
+
+          <aside class="builder-preview">
+            <div class="preview-card premium">
+              <div class="preview-top">
+                <p class="mini-label">Live preview</p>
+                <div class="preview-price" id="totalPrice">€0</div>
+              </div>
+              <div class="cake-visual refined" id="cakeVisual">
+                <div class="cake-base" id="cakeBase">🎂</div>
+                <div class="cake-shadow"></div>
+              </div>
+              <div class="preview-summary">
+                <div class="preview-item" id="prevSize"><span>Izmērs</span><em>Nav izvēlēts</em></div>
+                <div class="preview-item" id="prevFlavor"><span>Biskvīts</span><em>Nav izvēlēts</em></div>
+                <div class="preview-item" id="prevFilling"><span>Pildījums</span><em>Nav izvēlēts</em></div>
+                <div class="preview-item" id="prevCoating"><span>Pārklājums</span><em>Nav izvēlēts</em></div>
+                <div class="preview-item" id="prevDecor"><span>Dekori</span><em>Nav izvēlēts</em></div>
+              </div>
+              <button class="btn btn-primary btn-full" id="orderBtn" style="display:none">Turpināt uz WhatsApp</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="moments section-pad alt-bg" id="moments">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pasūtījuma ceļš</p>
+          <h2>Lapa tagad jūtas skaidrāka un pārliecinošāka.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>01</span>
+            <h3>Izvēlies stilu</h3>
+            <p>Klients saprot, ko jūs piedāvājat jau pirmajās sekundēs.</p>
+          </article>
+          <article class="timeline-item reveal delay-1">
+            <span>02</span>
+            <h3>Saliec torti</h3>
+            <p>Interaktīvais builderis palīdz nofiksēt vēlamo rezultātu.</p>
+          </article>
+          <article class="timeline-item reveal delay-2">
+            <span>03</span>
+            <h3>Nosūti pieprasījumu</h3>
+            <p>Pasūtījums notiek ātrāk, ar mazāk neskaidrību un vairāk kvalitātes sajūtas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="container contact-shell">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Kontakti</p>
+          <h2>Gatavs elegantākam Tortes Namiņš tēlam.</h2>
+          <p>Es uzlaboju lapas ritmu, tipogrāfiju, kartiņu stilu un buildera vizuālo sajūtu, lai vietne izskatītos vairāk boutique un mazāk kā parasts template.</p>
+          <div class="contact-list">
+            <div><strong>Adrese</strong><span>Rīga, LV</span></div>
+            <div><strong>Kanāls</strong><span>WhatsApp / Facebook / Instagram</span></div>
+            <div><strong>Stils</strong><span>Playful premium ar skaidru pasūtījuma plūsmu</span></div>
           </div>
         </div>
-        <div class="contact-form">
-          <form id="contactForm">
-            <div class="form-group">
-              <input type="text" placeholder="Jūsu vārds" required>
-            </div>
-            <div class="form-group">
-              <input type="tel" placeholder="Telefona numurs" required>
-            </div>
-            <div class="form-group">
-              <input type="email" placeholder="E-pasta adrese">
-            </div>
-            <div class="form-group">
-              <select>
-                <option value="">Izvēlieties pakalpojumu</option>
-                <option>Bento torte</option>
-                <option>Mousse torte</option>
-                <option>Svētku torte</option>
-                <option>Kāzu torte</option>
-                <option>Kēksiņi</option>
-                <option>Cits</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <textarea rows="4" placeholder="Jūsu ziņojums vai vēlmes..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">Nosūtīt ziņojumu ✉️</button>
-          </form>
+        <div class="contact-card reveal delay-1">
+          <h3>Kas nākamais?</h3>
+          <ul>
+            <li>Pievienot īstās tortes fotogrāfijas.</li>
+            <li>Ielikt īsto WhatsApp numuru un kontaktus.</li>
+            <li>Pievienot Instagram feed vai galeriju.</li>
+            <li>Padarīt builderi par reālu pasūtījuma formu.</li>
+          </ul>
+          <a href="#builder" class="btn btn-primary btn-full">Apskatīt uzlaboto builderi</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="logo"><span class="logo-icon">🧁</span> Tortes namiņš</span>
-          <p>Rīgas gardākā konditoreja kopš 2018.</p>
-        </div>
-        <div class="footer-links">
-          <a href="#home">Sākums</a>
-          <a href="#about">Par mums</a>
-          <a href="#gallery">Galerija</a>
-          <a href="#builder">Tortes veidotājs</a>
-          <a href="#menu">Izvēlne</a>
-          <a href="#contact">Kontakti</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2026 Tortes namiņš, SIA. Visas tiesības aizsargātas.</p>
-      </div>
-    </div>
-  </footer>
-
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
