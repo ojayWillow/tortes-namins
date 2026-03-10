@@ -363,42 +363,72 @@ a { text-decoration: none; color: inherit; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; }
   .about-images { margin-bottom: 40px; }
   .about-img-small { display: none; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  /* Gallery: 2-col on tablet */
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .gallery-item.large { grid-column: span 2; }
   .menu-grid, .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-float { display: none; }
   .hero-stats { gap: 24px; }
   .footer-content { flex-direction: column; gap: 20px; }
   .footer-links { flex-wrap: wrap; gap: 14px; }
-  /* Builder: stack vertically, preview becomes a summary panel at the bottom */
   .builder-app { grid-template-columns: 1fr; }
   .builder-preview { position: static; margin-top: 24px; }
 }
 
 @media (max-width: 600px) {
   .container { padding: 0 16px; }
-  .gallery-grid, .menu-grid, .testimonial-grid, .option-grid { grid-template-columns: 1fr; }
-  .gallery-item.large { grid-column: span 1; grid-row: span 1; }
+
+  /* ── GALLERY: compact 2-col, shorter tiles ── */
+  .gallery { padding: 50px 0; }
+  .gallery h2 { font-size: 1.7rem; margin-bottom: 16px; }
+  .gallery-filters { gap: 6px; margin-bottom: 20px; }
+  .filter-btn { padding: 7px 13px; font-size: 0.78rem; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .gallery-item { aspect-ratio: 1; border-radius: 14px; }
+  .gallery-item.large { grid-column: span 2; aspect-ratio: 2/1; grid-row: span 1; }
+  .gallery-placeholder { font-size: 1.8rem; }
+  .gallery-placeholder small { font-size: 0.72rem; margin-top: 4px; }
+
+  /* ── CAKE BUILDER: compact cards, horizontal layout ── */
+  .builder { padding: 50px 0; }
+  .builder h2 { font-size: 1.7rem; }
+  .builder-intro { font-size: 0.9rem; margin-bottom: 24px; }
+  .builder-step h3 { font-size: 1.1rem; margin-bottom: 12px; }
+  .option-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .option-inner { padding: 10px 8px; gap: 3px; border-radius: 10px; }
+  .option-emoji { font-size: 1.3rem; }
+  .option-inner strong { font-size: 0.8rem; }
+  .option-inner small { font-size: 0.7rem; }
+  .option-price { font-size: 0.74rem; }
+  /* Hide cake visual on mobile to save space */
+  .cake-visual { display: none; }
+  .preview-card { padding: 16px 14px; }
+  .preview-card h3 { font-size: 1rem; margin-bottom: 10px; }
+  .preview-item { font-size: 0.8rem; padding-bottom: 7px; }
+  .preview-total strong { font-size: 1.4rem; }
+  .step-indicators { gap: 6px; margin-bottom: 16px; }
+  .step-dot { width: 34px; height: 34px; font-size: 0.8rem; }
+  .builder-nav { gap: 10px; margin-top: 16px; }
+  .builder-nav .btn { flex: 1; justify-content: center; padding: 11px 16px; font-size: 0.88rem; }
+
+  /* ── OTHER SECTIONS ── */
+  .menu-grid, .testimonial-grid { grid-template-columns: 1fr; }
   .hero-stats { flex-direction: column; gap: 12px; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; justify-content: center; }
   .hero h1 { font-size: 2.2rem; }
   .about-features { grid-template-columns: 1fr; }
-  .about { padding: 70px 0; }
-  .gallery { padding: 70px 0; }
-  .builder { padding: 70px 0; }
-  .menu { padding: 70px 0; }
-  .testimonials { padding: 70px 0; }
-  .contact { padding: 70px 0; }
+  .about { padding: 60px 0; }
+  .menu { padding: 60px 0; }
+  .testimonials { padding: 60px 0; }
+  .contact { padding: 60px 0; }
   .contact-form { padding: 20px 16px; }
-  .preview-card { padding: 20px 16px; }
-  .step-indicators { flex-wrap: wrap; gap: 6px; }
-  .step-dot { width: 36px; height: 36px; font-size: 0.82rem; }
   .footer-links { flex-direction: column; gap: 10px; }
   .footer-content { padding: 0 4px; }
   .social-links { flex-direction: column; }
   .social-btn { text-align: center; }
   .hero { padding: 90px 16px 50px; min-height: 100svh; }
-  .builder-nav { gap: 10px; }
-  .builder-nav .btn { flex: 1; justify-content: center; }
+  .menu-card { padding: 22px 16px; }
+  .menu-emoji { font-size: 2rem; margin-bottom: 10px; }
+  .testimonial-card { padding: 20px 16px; }
 }
